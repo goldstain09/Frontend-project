@@ -1,3 +1,19 @@
+
+/* -------------------------------Scroll Bar------------------------------- */
+/* ------------------------------------------------------------------------ */
+::-webkit-scrollbar{border-radius: 50px!important;
+  width: 10px!important;}
+::-webkit-scrollbar-button{color: #97ddf4; height: 0rem;border-radius: 0px;}
+::-webkit-scrollbar-thumb{ background:#97ddf4;
+   width: 99%!important; 
+   height: 10%!important; 
+   border-radius: 50px; 
+   box-shadow: inset 5px 5px 10px #97ddf4;}
+::-webkit-scrollbar-track{background: transparent;}
+/* -----------------s------------------------------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

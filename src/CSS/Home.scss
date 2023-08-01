@@ -1,0 +1,91 @@
+$main:#97ddf4;
+
+.HomeProducts {
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 3.5rem;
+        margin-top: 5rem;
+        span{
+            color: $main;
+            font-size: 5rem;
+        }
+    }
+}
+
+@media (max-width:1400px) {
+    
+.HomeProducts {
+    h1 {
+        font-size: 3.1rem;
+        margin-top: 4rem;
+        span{
+            font-size: 4.4rem;
+        }
+    }
+}
+}
+
+@media (max-width:1200px) {
+    
+.HomeProducts {
+    h1 {
+        font-size: 2.7rem;
+        margin-top: 3rem;
+        span{
+            font-size: 4rem;
+        }
+    }
+}
+}
+
+@media (max-width:992px) {
+    
+.HomeProducts {
+    h1 {
+        font-size: 2.3rem;
+        margin-top: 5rem;
+        span{
+            font-size: 3.4rem;
+        }
+    }
+}
+}
+
+@media (max-width:768px) {
+    
+.HomeProducts {
+    h1 {
+        font-size: 2rem;
+        margin-top: 4rem;
+        span{
+            font-size: 2.8rem;
+        }
+    }
+}
+}
+
+@media (max-width:576px) {
+    
+.HomeProducts {
+    h1 {
+        font-size: 1.6rem;
+        margin-top: 5rem;
+        span{
+            font-size: 2.3rem;
+        }
+    }
+}
+}
+
+@media (max-width:394px) {
+    
+.HomeProducts {
+    h1 {
+        font-size: 1.2rem;
+        margin-top: 4rem;
+        span{
+            font-size: 1.8rem;
+        }
+    }
+}
+}
