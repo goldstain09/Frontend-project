@@ -1,16 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../Media/logo.png';
 import '../CSS/Nav.scss';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { searchStartAc_Fn } from '../Redux/Actions';
 
 export default function Nav() {
 
+    // for navigation
+    const navigate = useNavigate();
+
+    //dispatch
+    const dispatch = useDispatch();
+
+    // searchinput
+    const [searchInput, setSearchInput] = useState('');
+    // search error
+    const [searchError, setSearchError] = useState(false);
 
 
-    // fetch("https://fakestoreapi.com/products/category/women's%20clothing")
-    //     .then(res => res.json())
-    //     .then(json => console.log(json))
-    // 
+    // search error function
+    const searchChange = (event) => {
+        event.preventDefault();
+        setSearchInput(event.target.value);
+
+    }
+
+    //search button Function
+    const search = (event) => {
+        event.preventDefault();
+
+        if (searchInput.length > 0) {
+            dispatch(searchStartAc_Fn(searchInput));
+        } else {
+            setSearchError(true);
+        }
+    }
+
+
 
     return (
         <>
@@ -22,19 +49,37 @@ export default function Nav() {
 
 
                     <ul className="nav col-8 mb-2 justify-content-center mb-md-0 gap-3">
-                        <li><NavLink to={'/'} className="nav-link px-2">Home</NavLink></li>
+                        <li><NavLink onClick={() => {
+                            dispatch(searchStartAc_Fn(''));
+                            setSearchInput('');
+                        }} to={'/'} className="nav-link px-2">Home</NavLink></li>
                         <li><NavLink to={'/mens'} className="nav-link px-2">Men's Wear</NavLink></li>
                         <li><NavLink to={'/womens'} className="nav-link px-2">Women's Wear</NavLink></li>
                         <li><NavLink to={'/jewellery'} className="nav-link px-2">Jewellery</NavLink></li>
                         <li><NavLink to={'/electronics'} className="nav-link px-2">Electronics</NavLink></li>
-                       
+
 
                     </ul>
-                    <div className='col-1'>
-                        <input type="search" placeholder='Search'/>
+                    <div className='col-2 searchBarDiv'>
+                        <div className="d-flex">
+                            <input
+                                type="text"
+                                placeholder='Search'
+                                value={searchInput}
+                                onChange={searchChange}
+                                onInput={() => {
+                                    setSearchError(false);
+                                }}
+                            />
+                            <button type='submit' onClick={search} ><i class="bi bi-search"></i></button>
+                        </div>
+                        {
+                            searchError && <p className='text-danger'>Please enter something to search...</p>
+                        }
+
                     </div>
                     <div className="col-1 text-end">
-                        <button type="button" className="btn btn-outline-primary me-2"><i className="bi bi-cart3"></i> Cart</button>
+                        <button onClick={() => { navigate('/cart') }} type="button" className="btn btn-outline-primary me-2"><i className="bi bi-cart3"></i> Cart</button>
                     </div>
                 </header>
             </div>
@@ -49,8 +94,22 @@ export default function Nav() {
                             <i className="bi bi-columns-gap"></i>
                         </button>
                     </div>
-                    <div className="col-12">
-                        <input type="search" placeholder='Search'/>
+                    <div className="col-12  searchBarDiv" >
+                        <div className="d-flex">
+                            <input
+                                type="text"
+                                placeholder='Search'
+                                value={searchInput}
+                                onChange={searchChange}
+                                onInput={() => {
+                                    setSearchError(false);
+                                }}
+                            />
+                            <button onClick={search} ><i class="bi bi-search"></i></button>
+                        </div>
+                        {
+                            searchError && <p className='text-danger'>Please enter something to search...</p>
+                        }
                     </div>
                 </header>
             </div>
@@ -67,15 +126,32 @@ export default function Nav() {
                 <div className="offcanvas-body">
 
                     <ul className="nav col-8 mb-2 justify-content-center mb-md-0 gap-3">
-                        <li aria-label="Close" data-bs-dismiss="offcanvas"><NavLink to={'/'} className="nav-link px-2">Home</NavLink></li>
-                        <li aria-label="Close" data-bs-dismiss="offcanvas"><NavLink to={'/mens'} className="nav-link px-2">Men's Wear</NavLink></li>
-                        <li aria-label="Close" data-bs-dismiss="offcanvas"><NavLink to={'/womens'} className="nav-link px-2">Women's Wear</NavLink></li>
-                        <li aria-label="Close" data-bs-dismiss="offcanvas"><NavLink to={'/jewellery'} className="nav-link px-2">Jewellery</NavLink></li>
-                        <li aria-label="Close" data-bs-dismiss="offcanvas"><NavLink to={'/electronics'} className="nav-link px-2">Electronics</NavLink></li>
-                        
+                        <li aria-label="Close" data-bs-dismiss="offcanvas">
+                            <NavLink
+                                onClick={() => {
+                                    dispatch(searchStartAc_Fn(''));
+                                    setSearchInput('');
+                                }}
+                                to={'/'}
+                                className="nav-link px-2"
+                            >Home</NavLink>
+                        </li>
+                        <li aria-label="Close" data-bs-dismiss="offcanvas">
+                            <NavLink to={'/mens'} className="nav-link px-2">Men's Wear</NavLink>
+                        </li>
+                        <li aria-label="Close" data-bs-dismiss="offcanvas">
+                            <NavLink to={'/womens'} className="nav-link px-2">Women's Wear</NavLink>
+                        </li>
+                        <li aria-label="Close" data-bs-dismiss="offcanvas">
+                            <NavLink to={'/jewellery'} className="nav-link px-2">Jewellery</NavLink>
+                        </li>
+                        <li aria-label="Close" data-bs-dismiss="offcanvas">
+                            <NavLink to={'/electronics'} className="nav-link px-2">Electronics</NavLink>
+                        </li>
+
                     </ul>
                     <div className="col-1 text-end">
-                        <button type="button" className="btn btn-outline-primary me-2"><i className="bi bi-cart3"></i> Cart</button>
+                        <button onClick={() => { navigate('/cart') }} type="button" className="btn btn-outline-primary me-2"><i className="bi bi-cart3"></i> Cart</button>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import img from '../Media/icon.jpg';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCartStartAc_Fn } from '../Redux/Actions';
+import { HashLoader } from 'react-spinners';
 
 export default function ProductPage() {
 
@@ -16,16 +17,18 @@ export default function ProductPage() {
     // managing loading
     if (loading) {
         return (<>
-            loading
+            <div style={{ width: '99vw', height: '99vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+                <HashLoader style={{position:'fixed'}} color='#97ddf4' />
+            </div>
         </>)
     }
 
     //  managing error
     if (error) {
         return (<>
-            {
-                console.log(error)
-            }
+            <div style={{ width: '99vw', height: '99vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+                <h1 className='h1'>Something went wrong...</h1>
+            </div>
         </>)
     }
 

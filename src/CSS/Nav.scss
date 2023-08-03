@@ -1,4 +1,4 @@
-$main:#97ddf4;
+$main: #97ddf4;
 
 .mnvbar_MobileView {
     display: none !important;
@@ -19,6 +19,32 @@ $main:#97ddf4;
 
         }
 
+        .searchBarDiv {
+            .d-flex {
+                input {
+                    background: none;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    color: $main;
+                    font-size: 1.4rem;
+                    border-bottom: $main 1px solid;
+                    width: 13rem;
+                }
+
+                button {
+                    border: none;
+                    background: none;
+                    color: $main;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            p {
+                font-size: .9rem;
+            }
+        }
 
         ul {
             padding: 0;
@@ -58,7 +84,7 @@ $main:#97ddf4;
                     border-bottom: $main 1px solid;
                     transition: width .3s;
                     width: 100%;
-                    color: $main!important;
+                    color: $main !important;
                 }
 
 
@@ -108,10 +134,10 @@ $main:#97ddf4;
                         .dropdown-item {
                             background: none;
                             font-weight: 400;
-                            color: white!important;
+                            color: white !important;
                             font-family: 'Raleway', sans-serif !important;
                         }
-                        
+
                         .dropdown-item:hover {
                             background: $main !important;
                             border-radius: 25px;
@@ -122,14 +148,16 @@ $main:#97ddf4;
                 }
             }
         }
-        .text-end{
-            button{
+
+        .text-end {
+            button {
                 font-size: 1.4rem;
                 color: $main;
                 border: none;
                 font-family: 'Raleway', sans-serif !important;
             }
-            button:hover{
+
+            button:hover {
                 background: $main;
                 color: white;
             }
@@ -151,6 +179,20 @@ $main:#97ddf4;
                     height: 40px;
                 }
 
+            }
+
+
+            .searchBarDiv {
+                .d-flex {
+                    input {
+                        font-size: 1.2rem;
+                        width: 11rem;
+                    }
+                }
+
+                p {
+                    font-size: .79rem;
+                }
             }
 
             ul {
@@ -183,10 +225,23 @@ $main:#97ddf4;
 
             >a {
                 img {
-                    width: 130px;
+                    width: 110px;
                     height: 40px;
                 }
 
+            }
+
+            .searchBarDiv {
+                .d-flex {
+                    input {
+                        font-size: 1rem;
+                        width: 80%;
+                    }
+                }
+
+                p {
+                    font-size: .65rem;
+                }
             }
 
             ul {
@@ -196,13 +251,7 @@ $main:#97ddf4;
                     }
 
                     .nav-link {
-                        font-size: 1.1rem;
-                    }
-                }
-
-                .dropdown {
-                    .nav-link {
-                        font-size: 1.1rem !important;
+                        font-size: 1rem;
                     }
                 }
             }
@@ -219,11 +268,25 @@ $main:#97ddf4;
 
             >a {
                 img {
-                    width: 100px;
+                    width: 80px;
                     height: 30px;
                 }
 
             }
+
+            .searchBarDiv {
+                .d-flex {
+                    input {
+                        font-size: .8rem;
+                        width: 80%;
+                    }
+                }
+
+                p {
+                    font-size: .5rem;
+                }
+            }
+
             ul {
                 li {
                     .active {
@@ -231,15 +294,10 @@ $main:#97ddf4;
                     }
 
                     .nav-link {
-                        font-size: .8rem;
+                        font-size: .7rem;
                     }
                 }
 
-                .dropdown {
-                    .nav-link {
-                        font-size: .8rem !important;
-                    }
-                }
             }
         }
     }
@@ -253,7 +311,7 @@ $main:#97ddf4;
     .mnvbar_MobileView {
         display: inline-block !important;
         background: rgba(255, 255, 255, 0.43);
-        height: 6rem;
+        height: 9rem;
 
         header {
 
@@ -263,6 +321,36 @@ $main:#97ddf4;
                     height: 50px;
                 }
 
+            }
+
+            .searchBarDiv {
+                .d-flex {
+                    input {
+                        background: none;
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                        color: $main;
+                        font-size: 1.4rem;
+                        border-bottom: $main 1px solid;
+                        width: 70%;
+                        margin-left: 5%;
+                    }
+    
+                    button {
+                        border: none;
+                        background: none;
+                        color: $main;
+                        outline: none;
+                        box-shadow: none;
+                        width: 20%;
+                    }
+                }
+
+                p {
+                    font-size: .9rem;
+                    margin-left: 5%;
+                }
             }
 
             .text-end {
@@ -317,36 +405,13 @@ $main:#97ddf4;
                         border-radius: 15px;
                         border-bottom-left-radius: 0;
                     }
-                    .nav-link:hover{
+
+                    .nav-link:hover {
                         transform: scale(1.05);
                         background: $main;
                         transition: all .3s;
                     }
 
-                    >.dropdown-menu {
-                        background: rgba(255, 255, 255, 0.397);
-                        backdrop-filter: blur(4px);
-                        border: none;
-                        outline: none;
-                        border-radius: 25px;
-
-                        li {
-                            width: 100%;
-
-                            .dropdown-item {
-                                background: none;
-                                font-weight: 400;
-                                font-family: 'Raleway', sans-serif !important;
-                            }
-
-                            .dropdown-item:hover {
-                                background: $main !important;
-                                border-radius: 25px;
-                                color: aliceblue;
-                                transition: all .3s;
-                            }
-                        }
-                    }
                 }
             }
 
@@ -376,7 +441,7 @@ $main:#97ddf4;
 
 @media (max-width:576px) {
     .mnvbar_MobileView {
-        height: 5rem;
+        height: 8rem;
 
         header {
 
@@ -386,6 +451,23 @@ $main:#97ddf4;
                     height: 40px;
                 }
 
+            }
+            .searchBarDiv {
+                .d-flex {
+                    input {
+                        font-size: 1.2rem;
+                        width: 70%;
+                        margin-left: 5%;
+                    }
+    
+                    button {
+                        width: 20%;
+                    }
+                }
+
+                p {
+                    font-size: .7rem;
+                }
             }
 
             .text-end {
@@ -412,7 +494,7 @@ $main:#97ddf4;
 
 @media (max-width:394px) {
     .mnvbar_MobileView {
-        height: 4.5rem;
+        height: 6.5rem;
 
         header {
 
@@ -423,7 +505,23 @@ $main:#97ddf4;
                 }
 
             }
+            .searchBarDiv {
+                .d-flex {
+                    input {
+                        font-size: 1rem;
+                        width: 80%;
+                        margin-left: 2.5%;
+                    }
+    
+                    button {
+                        width: 15%;
+                    }
+                }
 
+                p {
+                    font-size: .7rem;
+                }
+            }
             .text-end {
                 button {
                     background: none;
@@ -444,9 +542,10 @@ $main:#97ddf4;
 
     }
 
-     
+
     .offcanvas {
         height: 100vh;
+
         .offcanvas-header {
             >a {
                 img {
@@ -454,16 +553,19 @@ $main:#97ddf4;
                 }
             }
         }
+
         .offcanvas-body {
             ul {
                 li {
                     width: 99%;
+
                     .nav-link {
-                        font-size: 1.2rem;  
+                        font-size: 1.2rem;
                     }
+
                     >.dropdown-menu {
                         border-radius: 15px;
-    
+
                     }
                 }
             }
@@ -472,7 +574,7 @@ $main:#97ddf4;
                 button {
                     padding: .5rem 1.5rem;
                     margin: 1.3rem;
-                    font-size: 1.2rem;       
+                    font-size: 1.2rem;
                 }
             }
         }

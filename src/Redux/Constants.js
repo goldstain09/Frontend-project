@@ -15,3 +15,17 @@ export const movingToProductError = 'movingToProductError';
 export const addToCartStart = 'addToCartStart';
 export const addToCartSuccess = 'addToCartSuccess';
 export const addToCartError = 'addToCartError';
+
+
+// for removing a product from the cart 
+export const removeProductStart = 'removeProductStart';
+export const removeProductSuccess = 'removeProductSuccess';
+export const removeProductError = 'removeProductError';
+
+
+
+// for search 
+export const searchStart = 'searchStart';
+export const searchSuccess = 'searchSuccess';
+export const searchError = 'searchError';
+

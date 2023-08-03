@@ -1,4 +1,4 @@
-import { addToCartError, addToCartStart, addToCartSuccess, getAllDataError, getAllDataStart, getAllDataSuccess, movingToProductError, movingToProductStart, movingToProductSuccess } from "./Constants";
+import { addToCartError, addToCartStart, addToCartSuccess, decreasingQuantityError, decreasingQuantityStart, decreasingQuantitySuccess, getAllDataError, getAllDataStart, getAllDataSuccess, increasingQuantityError, increasingQuantityStart, increasingQuantitySuccess, movingToProductError, movingToProductStart, movingToProductSuccess, removeProductError, removeProductStart, removeProductSuccess, searchError, searchStart, searchSuccess } from "./Constants";
 
 
 // For Getting all data
@@ -37,7 +37,7 @@ export const movingToProductErrorAc_Fn = (error) => ({
 
 
 
-// For adding a product to a cart 
+// For adding a product to the cart 
 export const addToCartStartAc_Fn = (data) => ({
     type:addToCartStart,
     payload:data
@@ -52,4 +52,47 @@ export const addToCartErrorAc_Fn = (error) => ({
     type:addToCartError,
     payload:error
 });
+
+
+
+
+
+// For removing a product from the cart 
+export const removeProductStartAc_Fn = (data) => ({
+    type:removeProductStart,
+    payload:data
+});
+
+export const removeProductSuccessAc_Fn = (data) => ({
+    type:removeProductSuccess,
+    payload:data
+});
+
+export const removeProductErrorAc_Fn = (error) => ({
+    type:removeProductError,
+    payload:error
+});
+
+
+
+
+
+
+
+// For removing a product from the cart 
+export const searchStartAc_Fn = (data) => ({
+    type:searchStart,
+    payload:data
+});
+
+export const searchSuccessAc_Fn = (data) => ({
+    type:searchSuccess,
+    payload:data
+});
+
+export const searchErrorAc_Fn = (error) => ({
+    type:searchError,
+    payload:error
+});
+
 
