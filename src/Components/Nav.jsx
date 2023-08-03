@@ -10,7 +10,7 @@ export default function Nav() {
     // fetch("https://fakestoreapi.com/products/category/women's%20clothing")
     //     .then(res => res.json())
     //     .then(json => console.log(json))
-    // https://fakestoreapi.com/products
+    // 
 
     return (
         <>
@@ -34,7 +34,7 @@ export default function Nav() {
                         <input type="search" placeholder='Search'/>
                     </div>
                     <div className="col-1 text-end">
-                        <button type="button" className="btn btn-outline-primary me-2"><i class="bi bi-cart3"></i> Cart</button>
+                        <button type="button" className="btn btn-outline-primary me-2"><i className="bi bi-cart3"></i> Cart</button>
                     </div>
                 </header>
             </div>
@@ -75,7 +75,7 @@ export default function Nav() {
                         
                     </ul>
                     <div className="col-1 text-end">
-                        <button type="button" className="btn btn-outline-primary me-2"><i class="bi bi-cart3"></i> Cart</button>
+                        <button type="button" className="btn btn-outline-primary me-2"><i className="bi bi-cart3"></i> Cart</button>
                     </div>
                 </div>
             </div>

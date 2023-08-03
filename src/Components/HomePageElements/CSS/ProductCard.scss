@@ -6,21 +6,18 @@ $main:#97ddf4;
     border-radius: 0;
     width: 30%;
     border: none;
+    height: auto!important;
     
     img{
-        width: 80%;
-        margin-left: 10%;
+        width: 40%;
+        margin-left: 30%;
         height: auto;
     }
     .card-body{
         overflow-x: hidden!important;
         h5{
-            font-size: 2.5rem;
+            font-size: 1.6rem;
             font-family: 'Raleway', sans-serif;
-        }
-        p{
-            font-family: 'Raleway', sans-serif;
-            
         }
         .stars{
             text-align: left!important;
@@ -34,7 +31,7 @@ $main:#97ddf4;
                 font-family: 'Raleway', sans-serif;
             }
         }
-        .students{
+        .availables{
             text-align: left;
             transform: translate(-100%);
             h4{
@@ -62,7 +59,7 @@ $main:#97ddf4;
     }
 }
 .CourseCard:hover{
-    border-bottom: $main 2px solid;
+    // border-bottom: $main 2px solid;
     transition: all .3s;
     transform: scale(1.03);
     .stars{
@@ -73,7 +70,7 @@ $main:#97ddf4;
         transition: all .4s;
         transform: translateX(0%);
     }
-    .students{
+    .availables{
         transition: all .4s;
         transform: translate(0%);
     }
@@ -102,23 +99,21 @@ $main:#97ddf4;
     width: 30%;
     
     img{
-        width: 80%;
-        margin-left: 10%;
+        width: 50%;
+        margin-left: 25%;
     }
     .card-body{
         h5{
-            font-size: 2.1rem;
+            font-size: 1.4rem;
             
         }
-        p{
-            font-size: .9rem;
-        }
+       
         .prices{
             h6{
                 font-size: .96rem;
             }
         }
-        .students{
+        .availables{
             h4{
                 font-size: .96rem;
             }
@@ -127,7 +122,7 @@ $main:#97ddf4;
             top: -5rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -147,24 +142,22 @@ $main:#97ddf4;
     width: 31%;
     
     img{
-        width: 90%;
-        margin-left: 5%;
+        width: 60%;
+        margin-left: 20%;
     }
     .card-body{
         h5{
-            font-size: 1.4rem;
+            font-size: 1.1rem;
             
         }
-        p{
-            font-size: .8rem;
-        }
+      
         .prices{
             h6{
                 font-size: .9rem;
                 margin-top: .5rem;
             }
         }
-        .students{
+        .availables{
             h4{
                 margin-top: 1.5rem;
                 font-size: .9rem;
@@ -194,24 +187,22 @@ $main:#97ddf4;
     width: 45%!important;
     
     img{
-        width: 90%;
-        margin-left: 5%;
+        width: 70%;
+        margin-left: 15%;
     }
     .card-body{
         h5{
-            font-size: 1.2rem;
+            font-size: 1rem;
             
         }
-        p{
-            font-size: .75rem;
-        }
+       
         .prices{
             h6{
                 font-size: .86rem;
                 margin-top: .5rem;
             }
         }
-        .students{
+        .availables{
             h4{
                 margin-top: 1.5rem;
                 font-size: .86rem;
@@ -240,24 +231,22 @@ $main:#97ddf4;
     width: 45%!important;
     
     img{
-        width: 98%;
-        margin-left: 1%;
+        width: 60%;
+        margin-left: 20%;
     }
     .card-body{
         h5{
-            font-size: 1.1rem;
+            font-size: 1rem;
             
         }
-        p{
-            font-size: .7rem;
-        }
+        
         .prices{
             h6{
                 font-size: .8rem;
                 margin-top: .5rem;
             }
         }
-        .students{
+        .availables{
             h4{
                 margin-top: 1.3rem;
                 font-size: .8rem;
@@ -287,24 +276,22 @@ $main:#97ddf4;
     margin-left: 5%;
     
     img{
-        width: 98%;
-        margin-left: 1%;
+        width: 75%;
+        margin-left: 12.5%;
     }
     .card-body{
         h5{
             font-size: 1.4rem;
             
         }
-        p{
-            font-size: .9rem;
-        }
+        
         .prices{
             h6{
                 font-size: .9rem;
                 margin-top: .5rem;
             }
         }
-        .students{
+        .availables{
             h4{
                 margin-top: 1.6rem;
                 font-size: .9rem;
@@ -334,24 +321,22 @@ $main:#97ddf4;
     margin-left: 2%;
     
     img{
-        width: 98%;
-        margin-left: 1%;
+        width: 90%;
+        margin-left: 5%;
     }
     .card-body{
         h5{
             font-size: 1.1rem;
             
         }
-        p{
-            font-size: .7rem;
-        }
+      
         .prices{
             h6{
                 font-size: .75rem;
                 margin-top: .5rem;
             }
         }
-        .students{
+        .availables{
             h4{
                 margin-top: 1.3rem;
                 font-size: .75rem;
