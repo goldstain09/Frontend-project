@@ -6,7 +6,8 @@ $main: #97ddf4;
     .row {
         .col-xl-5 {
             img {
-                width: 100%;
+                width: 70%;
+                margin-left: 15%;
             }
         }
 
@@ -15,7 +16,7 @@ $main: #97ddf4;
             font-family: 'Raleway', sans-serif;
 
             h1 {
-                font-size: 4rem;
+                font-size: 3rem;
                 color: black;
 
             }
@@ -67,6 +68,20 @@ $main: #97ddf4;
                     border: $main 1px solid;
                 }
             }
+            #notification{
+                width: 55%;
+                border: none;
+                border-bottom: 1px solid rgba(0, 128, 0, 0.322);
+                background:rgba(0, 128, 0, 0.495);
+                padding: 1rem 2rem;
+                margin-top: 2rem;
+                border-radius: 60px;
+                p{
+
+                    font-size: 2rem;
+                    color: white!important;
+                }
+            }
         }
     }
 }
@@ -81,7 +96,7 @@ $main: #97ddf4;
     .row {
         .col-xl-5 {
             img {
-                width: 100%;
+                width: 70%;     
             }
         }
 
@@ -89,25 +104,25 @@ $main: #97ddf4;
             padding-top: 3rem;
 
             h1 {
-                font-size: 3.5rem;
+                font-size: 2.4rem;
             }
 
             p {
                 margin-top: 1rem;
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
 
             h3 {
                 margin-top: 2rem;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
 
             h2 {
                 margin-top: 2rem;
-                font-size: 2.4rem;
+                font-size: 2rem;
                 
                 span{
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
                 }
             }
 
@@ -115,10 +130,19 @@ $main: #97ddf4;
                 margin-top: 2.6rem;
 
                 .btn {
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
                     padding: 1rem 1.8rem;
                 }
             }
+            #notification{
+                width: 60%;
+                padding: .1rem 2rem;
+                margin-top: 2rem;
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+
         }
     }
 }
@@ -129,12 +153,12 @@ $main: #97ddf4;
 @media (max-width:1200px) {
     
 .productPage {
-    padding-top: 6rem!important;
+    padding-top: 8rem!important;
 
     .row {
         .col-xl-5 {
             img {
-                width: 100%;
+                width: 70%;
             }
         }
 
@@ -142,25 +166,25 @@ $main: #97ddf4;
             padding-top: 3rem;
 
             h1 {
-                font-size: 3rem;
+                font-size: 1.8rem;
             }
 
             p {
                 margin-top: 1rem;
-                font-size: 1rem;
+                font-size: .9rem;
             }
 
             h3 {
                 margin-top: 1.6rem;
-                font-size: 1.4rem;
+                font-size: 1.1rem;
             }
 
             h2 {
                 margin-top: 1.6rem;
-                font-size: 1.8rem;
+                font-size: 1.3rem;
                 
                 span{
-                    font-size: 1.4rem;
+                    font-size: 1rem;
                 }
             }
 
@@ -168,8 +192,16 @@ $main: #97ddf4;
                 margin-top: 1.6rem;
 
                 .btn {
-                    font-size: 1.4rem;
-                    padding: .7rem 1.8rem;
+                    font-size: 1rem;
+                    padding: .5rem 1.4rem;
+                }
+            }
+            #notification{
+                width: 40%;
+                padding: .3rem 1.3rem;
+                margin-top: 2rem;
+                p{
+                    font-size: 1rem;
                 }
             }
         }
@@ -182,13 +214,13 @@ $main: #97ddf4;
 @media (max-width:992px) {
     
 .productPage {
-    padding-top: 6rem!important;
+    padding-top: 8rem!important;
 
     .row {
         .col-xl-5 {
             img {
-                width: 70%;
-                margin-left: 15%;
+                width: 40%;
+                margin-left: 30%;
             }
         }
 
@@ -196,29 +228,29 @@ $main: #97ddf4;
             padding-top: 3rem;
 
             h1 {
-                font-size: 3.5rem;
+                font-size: 2.3rem;
                 text-align: center;
             }
             
             p {
                 text-align: center;
                 margin-top: 1rem;
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
             
             h3 {
                 text-align: center;
                 margin-top: 1.6rem;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
             }
             
             h2 {
                 text-align: center;
                 margin-top: 1.6rem;
-                font-size: 2.4rem;
+                font-size: 2rem;
                 
                 span{
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
                 }
             }
             
@@ -227,8 +259,17 @@ $main: #97ddf4;
                 justify-content: center;
 
                 .btn {
-                    font-size: 1.8rem;
-                    padding: .7rem 1.8rem;
+                    font-size: 1.4rem;
+                    padding: .7rem 1.4rem;
+                }
+            }
+            #notification{
+                width: 40%;
+                margin-left: 30%;
+                padding: .3rem 1.3rem;
+                margin-top: 2rem;
+                p{
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -241,13 +282,13 @@ $main: #97ddf4;
 @media (max-width:768px) {
     
 .productPage {
-    padding-top: 6rem!important;
+    padding-top: 13rem!important;
 
     .row {
         .col-xl-5 {
             img {
-                width: 60%;
-                margin-left: 20%;
+                width: 50%;
+                margin-left: 25%;
             }
         }
 
@@ -255,65 +296,12 @@ $main: #97ddf4;
             padding-top: 2rem;
 
             h1 {
-                font-size: 3rem;
+                font-size: 1.8rem;
             }
             
             p {
                 margin-top: 1rem;
-                font-size: 1rem;
-            }
-            
-            h3 {
-                margin-top: 1.6rem;
-                font-size: 1.2rem;
-            }
-            
-            h2 {
-                margin-top: 1.6rem;
-                font-size: 2rem;
-                
-                span{
-                    font-size: 1.4rem;
-                }
-            }
-            
-            .d-flex {
-                margin-top: 1.6rem;
-
-                .btn {
-                    font-size: 1.4rem;
-                    padding: .7rem 1.8rem;
-                }
-            }
-        }
-    }
-}
-}
-
-
-@media (max-width:576px) {
-    
-.productPage {
-    padding-top: 8rem!important;
-
-    .row {
-        .col-xl-5 {
-            img {
-                width: 90%;
-                margin-left: 5%;
-            }
-        }
-
-        .col-xl-7 {
-            padding-top: 2rem;
-
-            h1 {
-                font-size: 2rem;
-            }
-            
-            p {
-                margin-top: 1rem;
-                font-size: .9rem;
+                font-size: .85rem;
             }
             
             h3 {
@@ -334,8 +322,79 @@ $main: #97ddf4;
                 margin-top: 1.6rem;
 
                 .btn {
+                    font-size: 1.1rem;
+                    padding: .4rem 1.3rem;
+                }
+            }
+            #notification{
+                width: 60%;
+                margin-left: 20%;
+                padding: .3rem 1rem;
+                margin-top: 2rem;
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+}
+
+
+@media (max-width:576px) {
+    
+.productPage {
+    padding-top: 12rem!important;
+
+    .row {
+        .col-xl-5 {
+            img {
+                width: 60%;
+                margin-left: 20%;
+            }
+        }
+
+        .col-xl-7 {
+            padding-top: 2rem;
+
+            h1 {
+                font-size: 1.3rem!important;
+            }
+            
+            p {
+                margin-top: 1rem;
+                font-size: .7rem;
+            }
+            
+            h3 {
+                margin-top: 1.6rem;
+                font-size: 1rem;
+            }
+            
+            h2 {
+                margin-top: 1.6rem;
+                font-size: 1.2rem;
+                
+                span{
+                    font-size: .9rem;
+                }
+            }
+            
+            .d-flex {
+                margin-top: 1.6rem;
+
+                .btn {
+                    font-size: .9rem;
+                    padding: .2rem 1rem;
+                }
+            }
+            #notification{
+                width: 80%;
+                margin-left: 10%;
+                padding: .1rem 1rem;
+                margin-top: 1.4rem;
+                p{
                     font-size: 1rem;
-                    padding: .4rem 1.2rem;
                 }
             }
         }
@@ -347,13 +406,13 @@ $main: #97ddf4;
 @media (max-width:394px) {
     
 .productPage {
-    padding-top: 9rem!important;
+    padding-top: 10rem!important;
 
     .row {
         .col-xl-5 {
             img {
-                width: 98%;
-                margin-left: 1%;
+                width: 80%;
+                margin-left: 10%;
             }
         }
 
@@ -361,22 +420,22 @@ $main: #97ddf4;
             padding-top: 1rem;
 
             h1 {
-                font-size: 1.5rem;
+                font-size: 1rem!important;
             }
             
             p {
                 margin-top: 1rem;
-                font-size: .8rem;
+                font-size: .67rem;
             }
             
             h3 {
                 margin-top: 1.4rem;
-                font-size: 1.1rem;
+                font-size: .9rem;
             }
             
             h2 {
                 margin-top: 1.4rem;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 
                 span{
                     font-size: 1rem;
@@ -387,8 +446,18 @@ $main: #97ddf4;
                 margin-top: 1.4rem;
 
                 .btn {
-                    font-size: .9rem;
-                    padding: .2rem 1rem;
+                    font-size: .8rem;
+                    padding: .2rem .8rem;
+                }
+            }
+
+            #notification{
+                width: 90%;
+                margin-left: 5%;
+                padding: .1rem .3rem;
+                margin-top: 1rem;
+                p{
+                    font-size: .8rem;
                 }
             }
         }

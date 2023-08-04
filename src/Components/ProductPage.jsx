@@ -1,7 +1,6 @@
 import React from 'react';
 import '../CSS/ProductPage.scss';
-import { Link, useNavigate } from 'react-router-dom';
-import img from '../Media/icon.jpg';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCartStartAc_Fn } from '../Redux/Actions';
 import { HashLoader } from 'react-spinners';
@@ -10,6 +9,19 @@ export default function ProductPage() {
 
     // for dispatch
     const dispatch = useDispatch();
+
+
+    //function for notification for added to cart
+    const notificationForAdded = (time) => {
+        let element = document.getElementById('notification');
+        element.style.display= 'block';
+
+        setTimeout(()=>{
+            element.style.display='none';
+        }, time)
+    }
+
+
 
     // getting product Data + loading + as well as error
     const { productData, loading, error } = useSelector((state) => state);
@@ -26,8 +38,8 @@ export default function ProductPage() {
     //  managing error
     if (error) {
         return (<>
-            <div style={{ width: '99vw', height: '99vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
-                <h1 className='h1'>Something went wrong...</h1>
+            <div style={{ width: '98vw', height: '99vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+                <h1 className='h1'style={{color:'#97ddf4',fontFamily:"'Raleway', sans-serif"}}>Something went wrong... <i class="bi bi-emoji-frown"></i></h1>
             </div>
         </>)
     }
@@ -62,9 +74,12 @@ export default function ProductPage() {
                                 className='btn btn-primary'
                                 onClick={() => {
                                     dispatch(addToCartStartAc_Fn(productData));
+                                    notificationForAdded(2500);
                                 }}
                             >Add to Cart</button>
-                            {/* if someone clicked on same double time then it will didnot addded it only increase no. of quatity */}
+                        </div>
+                        <div id='notification' style={{display:'none'}}>
+                            <p>Added Successfully...</p>
                         </div>
                     </div>
                 </div>

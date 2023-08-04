@@ -55,7 +55,7 @@ $main: #97ddf4;
 
                 .active {
                     transform: scale(1.05);
-                    color: $main !important;
+                    color: $main!important;
                     font-weight: 600;
                 }
 
@@ -86,78 +86,21 @@ $main: #97ddf4;
                     width: 100%;
                     color: $main !important;
                 }
-
-
-            }
-
-            .dropdown {
-                .nav-link {
-                    color: rgba(48, 48, 48, 0.819) !important;
-                    text-decoration: none;
-                    font-size: 1.3rem !important;
-                    font-weight: 400;
-                    font-family: 'Raleway', sans-serif;
-                }
-
-                .nav-link:hover {
-                    transform: scale(1.05);
-
-                }
-
-                .nav-link::after {
-                    content: "";
-                    color: rgba(48, 48, 48, 0.819) !important;
-                    display: block;
-                    height: 2px;
-                    width: 0%;
-                    transition: width .3;
-                }
-
-                .nav-link:hover::after {
-                    content: "";
-                    border-bottom: $main 1px solid;
-                    transition: width .3s;
-                    width: 100%;
-                    color: rgba(48, 48, 48, 0.819) !important;
-                }
-
-                >.dropdown-menu {
-                    background: rgba(63, 63, 63, 0.397);
-                    backdrop-filter: blur(4px);
-                    border: none;
-                    outline: none;
-                    border-radius: 25px;
-                    border-top-left-radius: 0;
-                    border-bottom-left-radius: 0;
-
-                    li {
-                        .dropdown-item {
-                            background: none;
-                            font-weight: 400;
-                            color: white !important;
-                            font-family: 'Raleway', sans-serif !important;
-                        }
-
-                        .dropdown-item:hover {
-                            background: $main !important;
-                            border-radius: 25px;
-                            color: $main;
-                            transition: all .3s;
-                        }
-                    }
-                }
             }
         }
 
         .text-end {
-            button {
+            .btn {
                 font-size: 1.4rem;
-                color: $main;
+                color: rgba(0, 0, 0, 0.542);
                 border: none;
-                font-family: 'Raleway', sans-serif !important;
+                background: none;
+            }
+            .active{
+                color: $main;
             }
 
-            button:hover {
+            .btn:hover {
                 background: $main;
                 color: white;
             }
@@ -206,11 +149,7 @@ $main: #97ddf4;
                     }
                 }
 
-                .dropdown {
-                    .nav-link {
-                        font-size: 1.2rem !important;
-                    }
-                }
+                
             }
         }
     }
@@ -563,10 +502,6 @@ $main: #97ddf4;
                         font-size: 1.2rem;
                     }
 
-                    >.dropdown-menu {
-                        border-radius: 15px;
-
-                    }
                 }
             }
 

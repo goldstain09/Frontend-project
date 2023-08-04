@@ -16,17 +16,15 @@ function* sagaGettingProductData() {
         yield delay(2000);
         yield put(getAllDataErrorAc_Fn(error.message));
     }
-
+    
 }
 
 
 // sagaMovingToPRoduct
 function* sagaMovingToPRoduct({ payload }) {
     try {
-        yield delay(2000);
         yield put(movingToProductSuccessAc_Fn(payload));
     } catch (error) {
-        yield delay(2000);
         yield put(movingToProductErrorAc_Fn(error.message));
     }
 }

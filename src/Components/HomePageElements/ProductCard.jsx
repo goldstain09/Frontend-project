@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './CSS/ProductCard.scss';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { movingToProductStartAc_Fn } from '../../Redux/Actions';
 
-export default function ProductCard({item}) {
+function ProductCard({item}) {
 
     // for dispatch
     const dispatch = useDispatch();
@@ -43,3 +43,5 @@ export default function ProductCard({item}) {
         </>
     )
 }
+
+export default memo(ProductCard);

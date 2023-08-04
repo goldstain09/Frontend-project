@@ -70,6 +70,7 @@ export default function Nav() {
                                 onInput={() => {
                                     setSearchError(false);
                                 }}
+                                onClick={()=>{navigate('/')}}
                             />
                             <button type='submit' onClick={search} ><i class="bi bi-search"></i></button>
                         </div>
@@ -79,7 +80,7 @@ export default function Nav() {
 
                     </div>
                     <div className="col-1 text-end">
-                        <button onClick={() => { navigate('/cart') }} type="button" className="btn btn-outline-primary me-2"><i className="bi bi-cart3"></i> Cart</button>
+                        <NavLink to={'/cart'} type="button" className="btn btn-outline-primary me-2"><i className="bi bi-cart3"></i></NavLink>
                     </div>
                 </header>
             </div>
@@ -104,6 +105,7 @@ export default function Nav() {
                                 onInput={() => {
                                     setSearchError(false);
                                 }}
+                                onClick={()=>{navigate('/')}}
                             />
                             <button onClick={search} ><i class="bi bi-search"></i></button>
                         </div>
@@ -151,7 +153,7 @@ export default function Nav() {
 
                     </ul>
                     <div className="col-1 text-end">
-                        <button onClick={() => { navigate('/cart') }} type="button" className="btn btn-outline-primary me-2"><i className="bi bi-cart3"></i> Cart</button>
+                        <button onClick={() => { navigate('/cart') }} type="button" className="btn btn-outline-primary me-2"><i className="bi bi-cart3"></i></button>
                     </div>
                 </div>
             </div>

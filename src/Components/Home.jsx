@@ -38,11 +38,11 @@ export default function Home() {
       let searchListItems = allData.filter((item) => item.title.toLowerCase().includes(searchValue.toLowerCase()));
       setItems(searchListItems);
       setCarouselHide(false);
-    }else{
+    } else {
       setItems(allData);
       setCarouselHide(true);
     }
-  }, [searchValue.length ,allData])
+  }, [searchValue.length, allData])
 
 
 
@@ -51,7 +51,9 @@ export default function Home() {
   // Managing Error
   if (error) {
     return (<>
-
+      <div style={{ width: '98vw', height: '99vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+        <h1 className='h1'style={{color:'#97ddf4',fontFamily:"'Raleway', sans-serif"}}>Something went wrong... <i class="bi bi-emoji-frown"></i></h1>
+      </div>
     </>)
   }
 
@@ -60,28 +62,30 @@ export default function Home() {
   // Managing Loading effects
   if (loading) {
     return (<>
-      <div style={{width:'99vw',height:'99vh',display:'flex', justifyContent:'center',alignItems:'center', overflow:'hidden'}}>
-        <HashLoader  style={{position:'fixed'}}  color='#97ddf4' />
+      <div style={{ width: '98vw', height: '98vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+        <HashLoader style={{ position: 'fixed' }} color='#97ddf4' />
       </div>
     </>)
   }
 
   return (
     <>
-    {
-      carouselHide && <Carousel WomensWear={WomensWear} MensWear={MensWear} jewellery={jewellery} />
-    }
+      {
+        carouselHide && <Carousel WomensWear={WomensWear} MensWear={MensWear} jewellery={jewellery} />
+      }
       {/* All Product cards---- */}
       <div className="container HomeProducts">
         {
-          carouselHide ? (<h1>Products for <span>you</span>!</h1>) : (<h1>Search <span>Results</span>!</h1>)
+          carouselHide ? (<h1>Products for <span>you</span>!</h1>) : (<h1 className='search-heading h3'>Search <span className='h1'>Results</span>!</h1>)
         }
-        
+
         <div className="row gap-5 gap-lg-4">
           {
             items.length > 0 ? items.map((item, index) => (
               <ProductCard item={item} key={index} />
-            )) : <div>No data</div>
+            )) : <div style={{ width: '98vw', height: '98vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+              <h1 className='h1' style={{color:'#97ddf4',fontFamily:"'Raleway', sans-serif"}}>No matches found <i class="bi bi-emoji-frown"></i></h1>
+            </div>
           }
         </div>
       </div>

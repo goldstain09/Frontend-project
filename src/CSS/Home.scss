@@ -1,6 +1,13 @@
 $main:#97ddf4;
 
 .HomeProducts {
+    .search-heading{
+        font-family: 'Raleway', sans-serif;
+        margin-top: 9rem;
+        span{
+            color: $main;
+        }
+    }
     h1 {
         font-family: 'Raleway', sans-serif;
         font-size: 3.5rem;
