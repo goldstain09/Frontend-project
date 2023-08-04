@@ -43,7 +43,7 @@ export default function Nav() {
         <>
             <div className="container-fluid fixed-top bg-none mnvbar">
                 <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-                    <a href="/" className="d-flex align-items-center col-1 mb-2 mb-md-0">
+                    <a href="/Frontend-project" className="d-flex align-items-center col-1 mb-2 mb-md-0">
                         <img src={logo} alt="logo" />
                     </a>
 
@@ -52,7 +52,7 @@ export default function Nav() {
                         <li><NavLink onClick={() => {
                             dispatch(searchStartAc_Fn(''));
                             setSearchInput('');
-                        }} to={'/'} className="nav-link px-2">Home</NavLink></li>
+                        }} to={'/Frontend-project'} className="nav-link px-2">Home</NavLink></li>
                         <li><NavLink to={'/mens'} className="nav-link px-2">Men's Wear</NavLink></li>
                         <li><NavLink to={'/womens'} className="nav-link px-2">Women's Wear</NavLink></li>
                         <li><NavLink to={'/jewellery'} className="nav-link px-2">Jewellery</NavLink></li>
@@ -70,7 +70,7 @@ export default function Nav() {
                                 onInput={() => {
                                     setSearchError(false);
                                 }}
-                                onClick={()=>{navigate('/')}}
+                                onClick={()=>{navigate('/Frontend-project')}}
                             />
                             <button type='submit' onClick={search} ><i class="bi bi-search"></i></button>
                         </div>
@@ -87,7 +87,7 @@ export default function Nav() {
             {/* -------------------------------------------------------------------------------- */}
             <div className='container-fluid fixed-top bg-none mnvbar_MobileView'>
                 <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-                    <a href="/" className="d-flex align-items-center col-1 mb-2 mb-md-0">
+                    <a href="/Frontend-project" className="d-flex align-items-center col-1 mb-2 mb-md-0">
                         <img src={logo} alt="logo" />
                     </a>
                     <div className='col-5 text-end'>
@@ -105,7 +105,7 @@ export default function Nav() {
                                 onInput={() => {
                                     setSearchError(false);
                                 }}
-                                onClick={()=>{navigate('/')}}
+                                onClick={()=>{navigate('/Frontend-project')}}
                             />
                             <button onClick={search} ><i class="bi bi-search"></i></button>
                         </div>
@@ -120,7 +120,7 @@ export default function Nav() {
             {/* canvas */}
             <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div className="offcanvas-header">
-                    <a href="/" className="d-flex align-items-center col-1 mb-2 mb-md-0">
+                    <a href="/Frontend-project" className="d-flex align-items-center col-1 mb-2 mb-md-0">
                         <img src={logo} alt="logo" />
                     </a>
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -134,7 +134,7 @@ export default function Nav() {
                                     dispatch(searchStartAc_Fn(''));
                                     setSearchInput('');
                                 }}
-                                to={'/'}
+                                to={'/Frontend-project'}
                                 className="nav-link px-2"
                             >Home</NavLink>
                         </li>

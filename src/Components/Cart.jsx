@@ -87,7 +87,7 @@ export default function Cart() {
                     )) : (<>
                     <div className='text-center'>
                     <h1 className='h1 text-center mb-5 mt-5'style={{color:'#97ddf4',fontFamily:"'Raleway', sans-serif"}}>Cart is Empty <i class="bi bi-emoji-frown"></i></h1>
-                    <Link to={'/'} className='w-100 text-center text-decoration-none' >ADD Items <i class="bi bi-cursor"></i></Link>
+                    <Link to={'/Frontend-project'} className='w-100 text-center text-decoration-none' >ADD Items <i class="bi bi-cursor"></i></Link>
                     </div>
                     </>)
                 }
@@ -99,7 +99,7 @@ export default function Cart() {
                         <h3 align='center' className='h3'>Products Total:${(total).toFixed(2)}</h3>
                         <h1 align='center' className='h1'>Grand Total:${(total + 10).toFixed(2)}</h1>
                         <button onClick={()=>{
-                            navigate('/');
+                            navigate('/Frontend-project');
                             alert(`Dummy---- Hurry!! Order Placed...`)
                         }} className='btn btn-outline-success'>Place Order</button>
                     </div>

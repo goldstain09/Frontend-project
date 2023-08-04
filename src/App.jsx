@@ -15,7 +15,7 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route element={<Home />} path="/" />
+        <Route element={<Home />} path="/Frontend-project" />
         <Route path="/product" >
           <Route path=":id" element={<ProductPage />} />
         </Route>
