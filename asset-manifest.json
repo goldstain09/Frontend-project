@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Frontend-project/static/css/main.bfffd73f.css",
+    "main.js": "/Frontend-project/static/js/main.ae4e2d8e.js",
+    "static/media/MensWear.jpg": "/Frontend-project/static/media/MensWear.7a643356052ed90dd793.jpg",
+    "static/media/jewellery.jpg": "/Frontend-project/static/media/jewellery.a2cdfe0dde9f64e3c656.jpg",
+    "static/media/WomensWear.jpg": "/Frontend-project/static/media/WomensWear.cda39ae29e2ad9835f9e.jpg",
+    "static/media/logo.png": "/Frontend-project/static/media/logo.aeb53d66e32c26909aae.png",
+    "index.html": "/Frontend-project/index.html",
+    "main.bfffd73f.css.map": "/Frontend-project/static/css/main.bfffd73f.css.map",
+    "main.ae4e2d8e.js.map": "/Frontend-project/static/js/main.ae4e2d8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfffd73f.css",
+    "static/js/main.ae4e2d8e.js"
+  ]
+}
