@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Components/Footer";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Components/Home";
 import Nav from "./Components/Nav";
 import ProductPage from "./Components/ProductPage";
@@ -11,6 +11,18 @@ import Jewellery from "./Components/Jewellery";
 import Electronics from "./Components/Electronics";
 
 function App() {
+
+
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+  const location = useLocation();
+  // Scroll to top whenever the location or route changes
+  useEffect(() => {
+    scrollToTop();
+  }, [location]);
+
   return (
     <>
       <Nav />
@@ -29,5 +41,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;
