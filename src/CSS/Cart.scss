@@ -1,488 +1,464 @@
 $main: #97ddf4;
 
 .cartPage {
-    padding-top: 10rem;
+  padding-top: 10rem;
 
-    >h1 {
-        font-family: 'Raleway', sans-serif;
-        color: $main;
+  > h1 {
+    font-family: "Raleway", sans-serif;
+    color: $main;
+  }
 
+  .row {
+    margin-top: 5rem;
+
+    .image_div {
+      img {
+        width: 50%;
+        margin-left: 25%;
+      }
     }
+
+    .total {
+      margin-top: 5rem;
+
+      h3 {
+        font-family: "Raleway", sans-serif;
+        color: $main;
+      }
+
+      h1 {
+        color: $main;
+        font-family: "Raleway", sans-serif;
+      }
+
+      .btn {
+        width: 20%;
+        margin-left: 40%;
+        background: none;
+        color: $main;
+        border: $main 1px solid;
+        font-family: "Raleway", sans-serif;
+        font-size: 2rem;
+        margin-top: 3rem;
+      }
+
+      .btn:hover {
+        background: $main;
+        color: white;
+      }
+    }
+
+    .Remove_div {
+      padding-top: 3rem;
+
+      > div {
+        padding: 2rem 25%;
+
+        button {
+          border: none;
+          padding: 1rem 3rem;
+          outline: none;
+          border-radius: 50px;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .title_Div {
+      padding-top: 3rem;
+      font-family: "Raleway", sans-serif;
+
+      h1 {
+        font-size: 2rem;
+        color: black;
+      }
+
+      h3 {
+        margin-top: 2rem;
+        color: rgba(0, 0, 0, 0.403) !important;
+        font-size: 1rem;
+      }
+
+      h2 {
+        margin-top: 2rem;
+        color: $main;
+        font-size: 2.5rem;
+
+        span {
+          color: rgba(0, 0, 0, 0.365);
+          font-size: 2rem;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .cartPage {
+    padding-top: 8rem;
 
     .row {
+      .image_div {
+        img {
+          width: 50%;
+        }
+      }
+
+      .title_Div {
+        padding-top: 2.3rem;
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        h3 {
+          margin-top: 2rem;
+          font-size: 1rem;
+        }
+
+        h2 {
+          margin-top: 2rem;
+          font-size: 2rem;
+
+          span {
+            font-size: 1.3rem;
+          }
+        }
+      }
+
+      .Remove_div {
+        padding-top: 5rem;
+
+        > div {
+          padding: 1rem 25%;
+
+          button {
+            padding: 1rem 3rem;
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .total {
         margin-top: 5rem;
 
-        .image_div {
-            img {
-                width: 50%;
-                margin-left: 25%;
-            }
+        .btn {
+          width: 20%;
+          margin-left: 40%;
+          font-size: 2rem;
+          margin-top: 2.5rem;
         }
-
-        .total {
-            margin-top: 5rem;
-
-            h3 {
-                font-family: 'Raleway', sans-serif;
-                color: $main;
-            }
-
-            h1 {
-                color: $main;
-                font-family: 'Raleway', sans-serif;
-
-            }
-
-            .btn {
-                width: 20%;
-                margin-left: 40%;
-                background: none;
-                color: $main;
-                border: $main 1px solid;
-                font-family: 'Raleway', sans-serif;
-                font-size: 2rem;
-                margin-top: 3rem;
-            }
-
-            .btn:hover {
-                background: $main;
-                color: white;
-
-            }
-        }
-
-        .Remove_div {
-            padding-top: 3rem;
-
-            >div {
-                padding: 2rem 25%;
-
-                button {
-                    border: none;
-                    padding: 1rem 3rem;
-                    outline: none;
-                    border-radius: 50px;
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        .title_Div {
-            padding-top: 3rem;
-            font-family: 'Raleway', sans-serif;
-
-            h1 {
-                font-size: 2rem;
-                color: black;
-
-            }
-
-            h3 {
-                margin-top: 2rem;
-                color: rgba(0, 0, 0, 0.403) !important;
-                font-size: 1rem;
-            }
-
-            h2 {
-                margin-top: 2rem;
-                color: $main;
-                font-size: 2.5rem;
-
-                span {
-                    color: rgba(0, 0, 0, 0.365);
-                    font-size: 2rem;
-                    text-decoration: line-through;
-                }
-            }
-
-        }
+      }
     }
+  }
 }
 
+@media (max-width: 1200px) {
+  .cartPage {
+    padding-top: 6rem !important;
 
-
-@media (max-width:1400px) {
-
-    .cartPage {
-        padding-top: 8rem;
-
-        .row {
-            .image_div {
-                img {
-                    width: 50%;
-                }
-            }
-
-            .title_Div {
-                padding-top: 2.3rem;
-
-                h1 {
-                    font-size: 1.5rem;
-                }
-
-                h3 {
-                    margin-top: 2rem;
-                    font-size: 1rem;
-                }
-
-                h2 {
-                    margin-top: 2rem;
-                    font-size: 2rem;
-
-                    span {
-                        font-size: 1.3rem;
-                    }
-                }
-
-            }
-
-            .Remove_div {
-                padding-top: 5rem;
-
-                >div {
-                    padding: 1rem 25%;
-
-                    button {
-                        padding: 1rem 3rem;
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-
-            .total {
-                margin-top: 5rem;
-
-                .btn {
-                    width: 20%;
-                    margin-left: 40%;
-                    font-size: 2rem;
-                    margin-top: 2.5rem;
-                }
-            }
-
+    .row {
+      .image_div {
+        img {
+          width: 50%;
         }
+      }
+
+      .title_Div {
+        padding-top: 1rem;
+
+        h1 {
+          font-size: 1.2rem;
+        }
+
+        h3 {
+          margin-top: 1.6rem;
+          font-size: 1rem;
+        }
+
+        h2 {
+          margin-top: 1.6rem;
+          font-size: 1.3rem;
+
+          span {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .Remove_div {
+        padding-top: 2rem;
+
+        > div {
+          padding: 1rem 25%;
+
+          button {
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .total {
+        margin-top: 5rem;
+
+        .btn {
+          width: 40%;
+          margin-left: 30%;
+          font-size: 1.7rem;
+          margin-top: 2rem;
+        }
+      }
     }
+  }
 }
 
+@media (max-width: 992px) {
+  .cartPage {
+    padding-top: 8rem !important;
 
-
-@media (max-width:1200px) {
-
-    .cartPage {
-        padding-top: 6rem !important;
-
-        .row {
-            .image_div {
-                img {
-                    width: 50%;
-                }
-            }
-
-            .title_Div {
-                padding-top: 1rem;
-
-                h1 {
-                    font-size: 1.2rem;
-                }
-
-                h3 {
-                    margin-top: 1.6rem;
-                    font-size: 1rem;
-                }
-
-                h2 {
-                    margin-top: 1.6rem;
-                    font-size: 1.3rem;
-
-                    span {
-                        font-size: 1.1rem;
-                    }
-                }
-            }
-
-            .Remove_div {
-                padding-top: 2rem;
-
-                >div {
-                    padding: 1rem 25%;
-
-                    button {
-                        padding: 1rem 3rem;
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-
-            .total {
-                margin-top: 5rem;
-
-                .btn {
-                    width: 40%;
-                    margin-left: 30%;
-                    font-size: 1.7rem;
-                    margin-top: 2rem;
-                }
-            }
+    .row {
+      .image_div {
+        img {
+          width: 20%;
+          margin-left: 40%;
         }
+      }
+
+      .title_Div {
+        padding-top: 1rem;
+
+        h1 {
+          font-size: 1.4rem;
+          text-align: center;
+          width: 60%;
+          margin-left: 20%;
+        }
+
+        h3 {
+          text-align: center;
+          margin-top: 1.6rem;
+          font-size: 1rem;
+        }
+
+        h2 {
+          text-align: center;
+          margin-top: 1.6rem;
+          font-size: 2rem;
+
+          span {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      .Remove_div {
+        padding-top: 0rem;
+        display: flex;
+        justify-content: center;
+
+        > div {
+          padding: 0.6rem 25%;
+
+          button {
+            padding: 1rem 3rem;
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .total {
+        margin-top: 4rem;
+
+        .btn {
+          width: 40%;
+          margin-left: 30%;
+          font-size: 1.5rem;
+          margin-top: 1.5rem;
+        }
+      }
     }
+  }
 }
 
+@media (max-width: 768px) {
+  .cartPage {
+    padding-top: 10rem !important;
 
-
-@media (max-width:992px) {
-
-    .cartPage {
-        padding-top: 8rem !important;
-
-        .row {
-            .image_div {
-                img {
-                    width: 20%;
-                    margin-left: 40%;
-                }
-            }
-
-            .title_Div {
-                padding-top: 1rem;
-
-                h1 {
-                    font-size: 1.4rem;
-                    text-align: center;
-                    width: 60%;
-                    margin-left: 20%;
-                }
-
-                h3 {
-                    text-align: center;
-                    margin-top: 1.6rem;
-                    font-size: 1rem;
-                }
-
-                h2 {
-                    text-align: center;
-                    margin-top: 1.6rem;
-                    font-size: 2rem;
-
-                    span {
-                        font-size: 1.4rem;
-                    }
-                }
-            }
-
-            .Remove_div {
-                padding-top: 0rem;
-                display: flex;
-                justify-content: center;
-
-                >div {
-                    padding: .6rem 25%;
-
-                    button {
-                        padding: 1rem 3rem;
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-
-            .total {
-                margin-top: 4rem;
-
-                .btn {
-                    width: 40%;
-                    margin-left: 30%;
-                    font-size: 1.5rem;
-                    margin-top: 1.5rem;
-                }
-            }
+    .row {
+      .image_div {
+        img {
+          width: 20%;
+          margin-left: 40%;
         }
+      }
+
+      .title_Div {
+        padding-top: 2rem;
+
+        h1 {
+          font-size: 1.2rem;
+          width: 70%;
+          margin-left: 15%;
+        }
+
+        h3 {
+          margin-top: 1.6rem;
+          font-size: 1rem;
+        }
+
+        h2 {
+          margin-top: 1.6rem;
+          font-size: 1.5rem;
+
+          span {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .Remove_div {
+        > div {
+          padding: 0.6rem 25%;
+
+          button {
+            padding: 1rem 2rem;
+            font-size: 1.3rem;
+          }
+        }
+      }
+
+      .total {
+        margin-top: 2rem;
+
+        .btn {
+          width: 60%;
+          margin-left: 20%;
+          font-size: 1.3rem;
+          margin-top: 1.2rem;
+        }
+      }
     }
+  }
 }
 
+@media (max-width: 576px) {
+  .cartPage {
+    padding-top: 9rem !important;
 
-
-@media (max-width:768px) {
-
-    .cartPage {
-        padding-top: 10rem !important;
-
-        .row {
-            .image_div {
-                img {
-                    width: 20%;
-                    margin-left: 40%;
-                }
-            }
-
-            .title_Div {
-                padding-top: 2rem;
-
-                h1 {
-                    font-size: 1.2rem;
-                    width: 70%;
-                    margin-left: 15%;
-                }
-
-                h3 {
-                    margin-top: 1.6rem;
-                    font-size: 1rem;
-                }
-
-                h2 {
-                    margin-top: 1.6rem;
-                    font-size: 1.5rem;
-
-                    span {
-                        font-size: 1.1rem;
-                    }
-                }
-            }
-
-            .Remove_div {
-
-                >div {
-                    padding: .6rem 25%;
-
-                    button {
-                        padding: 1rem 2rem;
-                        font-size: 1.3rem;
-                    }
-                }
-            }
-
-            .total {
-                margin-top: 2rem;
-
-                .btn {
-                    width: 60%;
-                    margin-left: 20%;
-                    font-size: 1.3rem;
-                    margin-top: 1.2rem;
-                }
-            }
+    .row {
+      .image_div {
+        img {
+          width: 30%;
+          margin-left: 35%;
         }
+      }
+
+      .title_Div {
+        padding-top: 2rem;
+
+        h1 {
+          font-size: 1rem;
+          width: 70%;
+          margin-left: 15%;
+        }
+
+        h3 {
+          margin-top: 1rem;
+          font-size: 0.8rem;
+        }
+
+        h2 {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .Remove_div {
+        > div {
+          padding: 0.3rem 25%;
+
+          button {
+            padding: 0.3rem 2rem;
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .total {
+        margin-top: 1rem;
+
+        .btn {
+          width: 70%;
+          margin-left: 15%;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+        }
+      }
     }
+  }
 }
 
+@media (max-width: 394px) {
+  .cartPage {
+    padding-top: 9rem !important;
 
-@media (max-width:576px) {
-
-    .cartPage {
-        padding-top: 9rem !important;
-
-        .row {
-            .image_div {
-                img {
-                    width: 30%;
-                    margin-left: 35%;
-                }
-            }
-
-            .title_Div {
-                padding-top: 2rem;
-
-                h1 {
-                    font-size: 1rem;
-                    width: 70%;
-                    margin-left: 15%;
-                }
-
-                h3 {
-                    margin-top: 1rem;
-                    font-size: .8rem;
-                }
-
-                h2 {
-                    margin-top: 1rem;
-                    font-size: 1.2rem;
-
-                    span {
-                        font-size: 1rem;
-                    }
-                }
-            }
-
-            .Remove_div {
-                >div {
-                    padding: .3rem 25%;
-
-                    button {
-                        padding: .3rem 2rem;
-                        font-size: 1.1rem;
-                    }
-                }
-            }
-
-            .total {
-                margin-top: 1rem;
-
-                .btn {
-                    width: 70%;
-                    margin-left: 15%;
-                    font-size: 1.2rem;
-                    margin-top: 1rem;
-                }
-            }
+    .row {
+      .image_div {
+        img {
+          width: 50%;
+          margin-left: 25%;
         }
-    }
-}
+      }
 
+      .title_Div {
+        padding-top: 1rem;
 
-@media (max-width:394px) {
-
-    .cartPage {
-        padding-top: 9rem !important;
-
-        .row {
-            .image_div {
-                img {
-                    width: 50%;
-                    margin-left: 25%;
-                }
-            }
-
-            .title_Div {
-                padding-top: 1rem;
-
-                h1 {
-                    font-size: .9rem;
-                }
-
-                h3 {
-                    margin-top: 1rem;
-                    font-size: .8rem;
-                }
-
-                h2 {
-                    margin-top: 1rem;
-                    font-size: 1rem;
-
-                    span {
-                        font-size: .9rem;
-                    }
-                }
-            }
-
-            .Remove_div {
-                >div {
-                    padding: .3rem 25%;
-
-                    button {
-                        padding: .3rem 2rem;
-                        font-size: 1rem;
-                    }
-                }
-            }
-
-            .total {
-                margin-top: 1rem;
-
-                .btn {
-                    width: 90%;
-                    margin-left: 5%;
-                    font-size: 1rem;
-                    margin-top: 1rem;
-                }
-            }
+        h1 {
+          font-size: 0.9rem;
         }
+
+        h3 {
+          margin-top: 1rem;
+          font-size: 0.8rem;
+        }
+
+        h2 {
+          margin-top: 1rem;
+          font-size: 1rem;
+
+          span {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .Remove_div {
+        > div {
+          padding: 0.3rem 25%;
+
+          button {
+            padding: 0.3rem 2rem;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .total {
+        margin-top: 1rem;
+
+        .btn {
+          width: 90%;
+          margin-left: 5%;
+          font-size: 1rem;
+          margin-top: 1rem;
+        }
+      }
     }
+  }
 }

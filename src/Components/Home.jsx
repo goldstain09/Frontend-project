@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import '../CSS/Home.scss';
-import WomensWear from '../Media/WomensWear.jpg';
-import MensWear from '../Media/MensWear.jpg';
-import jewellery from '../Media/jewellery.jpg';
-import Carousel from './HomePageElements/Carousel';
-import ProductCard from './HomePageElements/ProductCard';
-import { useDispatch, useSelector } from 'react-redux';
-import { getAllDataStartAc_Fn } from '../Redux/Actions';
-import { HashLoader } from 'react-spinners';
+import React, { useEffect, useState } from "react";
+import "../CSS/Home.scss";
+import WomensWear from "../Media/WomensWear.jpg";
+import MensWear from "../Media/MensWear.jpg";
+import jewellery from "../Media/jewellery.jpg";
+import Carousel from "./HomePageElements/Carousel";
+import ProductCard from "./HomePageElements/ProductCard";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllDataStartAc_Fn } from "../Redux/Actions";
+import { HashLoader } from "react-spinners";
 
 export default function Home() {
-
-
   // for dispatching data
   const dispatch = useDispatch();
 
@@ -21,76 +19,122 @@ export default function Home() {
   }, []);
 
   // getting data using useSelector() with destructuring
-  const { loading, error, allData, searchValue } = useSelector((state) => state);
+  const { loading, error, allData, searchValue } = useSelector(
+    (state) => state
+  );
 
-
-
-  // for showing items 
+  // for showing items
   const [items, setItems] = useState([]);
 
   //if searched items showed then carousel will hide
   const [carouselHide, setCarouselHide] = useState(true);
 
-
-
   useEffect(() => {
     if (searchValue) {
-      let searchListItems = allData.filter((item) => item.title.toLowerCase().includes(searchValue.toLowerCase()));
+      let searchListItems = allData.filter((item) =>
+        item.title.toLowerCase().includes(searchValue.toLowerCase())
+      );
       setItems(searchListItems);
       setCarouselHide(false);
     } else {
       setItems(allData);
       setCarouselHide(true);
     }
-  }, [searchValue.length, allData])
-
-
-
-
+  }, [searchValue.length, allData]);
 
   // Managing Error
   if (error) {
-    return (<>
-      <div style={{ width: '98vw', height: '99vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
-        <h1 className='h1'style={{color:'#97ddf4',fontFamily:"'Raleway', sans-serif"}}>Something went wrong... <i class="bi bi-emoji-frown"></i></h1>
-      </div>
-    </>)
+    return (
+      <>
+        <div
+          style={{
+            width: "98vw",
+            height: "99vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            overflow: "hidden",
+          }}
+        >
+          <h1
+            className="h1"
+            style={{ color: "#97ddf4", fontFamily: "'Raleway', sans-serif" }}
+          >
+            Something went wrong... <i class="bi bi-emoji-frown"></i>
+          </h1>
+        </div>
+      </>
+    );
   }
-
-
 
   // Managing Loading effects
   if (loading) {
-    return (<>
-      <div style={{ width: '98vw', height: '98vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
-        <HashLoader style={{ position: 'fixed' }} color='#97ddf4' />
-      </div>
-    </>)
+    return (
+      <>
+        <div
+          style={{
+            width: "98vw",
+            height: "98vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            overflow: "hidden",
+          }}
+        >
+          <HashLoader style={{ position: "fixed" }} color="#97ddf4" />
+        </div>
+      </>
+    );
   }
 
   return (
     <>
-      {
-        carouselHide && <Carousel WomensWear={WomensWear} MensWear={MensWear} jewellery={jewellery} />
-      }
+      {carouselHide && (
+        <Carousel
+          WomensWear={WomensWear}
+          MensWear={MensWear}
+          jewellery={jewellery}
+        />
+      )}
       {/* All Product cards---- */}
       <div className="container HomeProducts">
-        {
-          carouselHide ? (<h1>Products for <span>you</span>!</h1>) : (<h1 className='search-heading h3'>Search <span className='h1'>Results</span>!</h1>)
-        }
+        {carouselHide ? (
+          <h1>
+            Products for <span>you</span>!
+          </h1>
+        ) : (
+          <h1 className="search-heading h3">
+            Search <span className="h1">Results</span>!
+          </h1>
+        )}
 
         <div className="row gap-5 gap-lg-4">
-          {
-            items.length > 0 ? items.map((item, index) => (
-              <ProductCard item={item} key={index} />
-            )) : <div style={{ width: '98vw', height: '98vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
-              <h1 className='h1' style={{color:'#97ddf4',fontFamily:"'Raleway', sans-serif"}}>No matches found <i class="bi bi-emoji-frown"></i></h1>
+          {items.length > 0 ? (
+            items.map((item, index) => <ProductCard item={item} key={index} />)
+          ) : (
+            <div
+              style={{
+                width: "98vw",
+                height: "98vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                overflow: "hidden",
+              }}
+            >
+              <h1
+                className="h1"
+                style={{
+                  color: "#97ddf4",
+                  fontFamily: "'Raleway', sans-serif",
+                }}
+              >
+                No matches found <i class="bi bi-emoji-frown"></i>
+              </h1>
             </div>
-          }
+          )}
         </div>
       </div>
-
-
     </>
-  )
+  );
 }

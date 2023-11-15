@@ -11,8 +11,6 @@ import Jewellery from "./Components/Jewellery";
 import Electronics from "./Components/Electronics";
 
 function App() {
-
-
   // Function to scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -28,7 +26,7 @@ function App() {
       <Nav />
       <Routes>
         <Route element={<Home />} path="/Frontend-project" />
-        <Route path="/product" >
+        <Route path="/product">
           <Route path=":id" element={<ProductPage />} />
         </Route>
         <Route element={<Cart />} path="/cart" />
@@ -41,6 +39,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;
